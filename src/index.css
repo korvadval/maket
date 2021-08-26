@@ -1,13 +1,130 @@
 body {
+  font: 14px "Century Gothic", Futura, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100%;
+  cursor: default;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  background-color: teal;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-flex;
+}
+.panel {
+  height: initial;
+  width: 250px;
+  background-color: #707999;
+  position: relative;
+}
+.panelMini {
+  height: initial;
+  width: 0px;
+  background-color: rgb(153, 112, 112);
+  position: relative;
+}
+.panelButton {
+  width: calc(100% - 20px);
+  display: inline-flex;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: auto;
+}
+.panelButtonClicked {
+  width: calc(100% - 20px);
+  display: inline-flex;
+  display: inline-flex;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  background-color: #b4bbd640;
+  border-style: groove;
+  border-top-right-radius: 0;
+  border-right: 0;
+  border-top: 0;
+  border-color: #00000073;
+}
+.image {
+  width: 30px;
+}
+.textPanel {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+.imageHeader {
+  width: 50px;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+.headerPanel {
+  display: inline-flex;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.headerPanelText {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.content {
+  height: initial;
+  width: 100%;
+  background-color: rgb(196 197 204);
+  position: relative;
+  overflow-y: overlay;
+}
+.searchForm {
+  margin-left: 20px;
+  width: calc(100% - 60px);
+  outline: 0;
+  outline-offset: 0;
+  border-style: ridge;
+  border-radius: 50px;
+  padding-left: 15px;
+  height: 30px;
+}
+.contentHeader {
+  padding-left: 20px;
+}
+.contentHeaderMini {
+  padding-right: 20px;
+  text-align: right;
+}
+.itemContent {
+  background-color: #707999;
+  width: 280px;
+  height: 150px;
+  margin: 10px;
+  border-style: groove;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: rgb(85, 85, 85);
+  text-align: center;
+}
+.contentTable {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.showImage {
+  background-color: #707999;
+  padding: 7px 0 7px 0;
+  border-radius: 0 50% 50% 0;
+  width: 30px;
+  position: fixed;
+}
+.showImageNone {
+  background-color: #707999;
+  padding: 7px 0 7px 0;
+  border-radius: 0 50% 50% 0;
+  width: 30px;
+  position: absolute;
+  display: none;
+  position: fixed;
 }
